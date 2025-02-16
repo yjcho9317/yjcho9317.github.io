@@ -290,6 +290,18 @@ footer {
 		transform:scale(1,1)
 	}
 }
+#ability {
+	padding:75px 15px;
+	border-bottom:1px solid #dcd9d9
+}
+#ability h2 {
+    font-weight: bold;
+	color:#272727
+}
+#ability p {
+	color:#272727;
+	margin:0
+}
 #about {
 	padding:75px 15px;
 	border-bottom:1px solid #dcd9d9
@@ -712,6 +724,12 @@ footer {
 		text-align:center
 	}
 	#about p {
+		text-align:left
+	}
+	#ability {
+		text-align:center
+	}
+	#ability p {
 		text-align:left
 	}
 }
