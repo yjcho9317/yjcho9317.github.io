@@ -25,16 +25,19 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
             </li>
+            <li>
+                <a href="#ability">ABILTIY</a>
+            </li>
+            <!-- <li>
+                <a href="#about">ABOUT</a>
+            </li> -->
             <li>
                 <a href="#experience">CAREER</a>
             </li>
             <li>
                 <a href="#projects">PROJECTS</a>
-            </li>
-            <li>
-                <a href="#skills">SKILLS</a>
             </li>
             <li>
                 <a href="#contact">CONTACT</a>
@@ -60,8 +63,72 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
+
+    <div id="skills" class="background-alt">
+        <h2 class="heading">Skills</h2>
+        <ul></ul>
+
+        <h3>Android</h3>
+        <ul>
+            <li>Android App</li>
+            <li>Android SDK</li>
+            <li>Android NDK</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Jetpack</li>
+            <li>MV-Whatever</li>
+            <li>Flutter</li>
+            <li>Dart</li>
+        </ul>
+        
+        <h3>iOS</h3>
+        <ul>
+            <li>iOS SDK</li>
+            <li>C++</li>
+            <li>Objective-C</li>
+            <li>Swift</li>
+        </ul>
+        
+        <h3>Web</h3>
+        <ul>
+            <li>JavaScript</li>
+            <li>Java Servlet</li>
+            <li>JSP</li>
+            <li>HTML5</li>
+            <li>CSS 3</li>
+        </ul>
+        
+        <h3>ETC</h3>
+        <ul>
+            <li>git</li>
+            <li>Jira</li>
+            <li>Jenkins</li>
+            <li>Pytorch</li>
+        </ul>
+
+    </div>
+    <!-- End #skills -->
+
+    <div id="ability">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">ABILITY</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        모바일 앱 개발: Android, iOS 플랫폼에서의 앱 개발 및 운영<br><br>
+                        AI 및 머신러닝: Pytorch를 활용한 딥페이크 탐지 모델 개발 경험<br><br>
+                        웹 개발: JavaScript, HTML5, CSS3를 활용한 반응형 웹 개발<br><br>
+                        다양한 플랫폼 개발: Android, iOS, Web, PC 플랫폼에서 개발<br><br>
+                        보안 기술: 루팅/탈옥 탐지, 보이스 피싱/스미싱/원격 탐지 등 보안 기능 개발<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
  
-    <div id="about" class="background-alt">
+    <!-- <div id="about" class="background-alt">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -76,10 +143,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End #about -->
 
-    <div id="experience">
+    <div id="experience" class="background-alt">
         <h2 class="heading">CAREER</h2>
         <div id="experience-timeline">
             <div data-date="2018.04 ~">
@@ -87,13 +154,13 @@
                 <h4>모바일보안개발2팀</h4>
                 <ul>
                     <li>
-                        모바일 백신 솔루션 TouchEn mVaccine SDK 개발 및 운영
+                        모바일 백신 솔루션 SDK, APP TouchEn mVaccine  개발 및 운영
                     </li>
                     <li>
-                        모바일 백신 서비스 라온 모바일 시큐리티 APP 개발 및 운영
+                        모바일 백신 서비스 APP 라온 모바일 시큐리티  개발 및 운영
                     </li>
                     <li>
-                        웹 가상 키패드 Transkey 개발 및 운영
+                        웹 가상 키패드 솔루션 SDK Transkey 개발 및 운영
                     </li>
                 </ul>
             </div>
@@ -101,7 +168,7 @@
     </div>
     <!-- End #experience -->
 
-    <div id="projects" class="background-alt">
+    <div id="projects">
         <h2 class="heading">PROJECTS</h2>
         <div class="container">
             <div class="row">
@@ -116,8 +183,7 @@
                     <div class="project-info2">
                         <h3>TouchEn mVaccine</h3>
                         <p>
-                            모바일 SDK, APP, WEB 다양한 환경을 지원하는 백신 솔루션입니다.<br>
-                            바이러스, 악성코드, 피싱 앱, 루팅, 원격, 에뮬레이터 탐지 등 보안 기능을 제공합니다.
+                            TouchEn mVaccine은 모바일 보안 솔루션으로, 사용자의 개인정보를 보호하고 악성 앱, 루팅, 탈옥, 보이스 피싱 등의 위협을 탐지하는 기능을 제공.
                         </p>
                         <p style="font-weight: bold; color: blue;" onclick="openModal('mVaccine_modal')">More</p>
                     </div>
@@ -128,22 +194,23 @@
                             <h1>TouchEn mVaccine</h1>
                             <div class="modal-content2">
                                 <p align="left">
-                                    소속 회사 : 라온시큐어<br>
-                                    담당 역할 : Android / iOS SDK, APP 개발<br>
-                                    업무 기간 : 2019.04 ~ 현재<br>
-                                    개발 환경 : Android Studio, Xcode<br>
-                                    개발 스펙 : Android SDK, Android NDK, Java, Kotlin, Objective-C, MVVM Pattern, Firebase<br>
-                                    상세 업무 :<br>
-                                    - UI 리뉴얼 및 커스텀 뷰 개발<br>
-                                    - Kotlin 마이그레이션<br>
-                                    - MVVM 리팩토링<br>
-                                    - Magisk 루팅 탐지 개발<br>
-                                    - 원격 탐지 개발<br>
-                                    - 보이스 피싱 앱 탐지 개발<br>
-                                    - 클라우드 서비스 개발<br>
-                                    - Firebase 적용 및 운영<br>
-                                    - 구글 플레이 스토어 운영<br>
-                                    관련 링크 :<br>
+                                    1. 소속 회사: 라온시큐어<br><br>
+                                    2. 담당 역할: Android, iOS SDK / App 개발 및 운영<br><br>
+                                    3. 업무 기간: 2019.04 ~ 현재<br><br>
+                                    4. 개발 환경: Android Studio, Xcode<br><br>
+                                    5. 기술 스택: Android SDK, Android NDK, Android 리버싱, Java, Kotlin, iOS SDK, Objective-C, MVVM Pattern, Firebase<br><br>
+                                    6. 주요 업무 및 성과:<br>
+                                    - 클라우드 서비스 개발: 클라우드 서비스 제공으로 보안 위협에 실시간 대응이 가능해졌으며, 새로운 수익 방법을 창출.<br>
+                                    - APP / Web 간 통신 기법 개발: URL Scheme 기반 호출 방식이 아닌, 중앙 서버를 통한 데이터를 전달하는 통신 방법 개발.<br>
+                                    - Kotlin 마이그레이션: Java 기반 코드를 Kotlin으로 마이그레이션하여 코드의 가독성과 유지보수성을 크게 향상.<br>
+                                    - MVVM 리팩토링: 전체적인 구조를 MVVM 으로 리팩토링하여 테스트 가능성과 확장성 높임.<br>
+                                    - Magisk 루팅 탐지 개발: 다양한 루팅 기법을 연구 및 분석하여 Magisk 루팅 탐지 기능 개발.<br>
+                                    - 원격 탐지 개발 : 시스템, KNOX 등의 보안 정책(SandBox 등) 을 우회하여 탐지하는 방법 개발.<br>
+                                    - 보이스 피싱 앱 탐지 개발: 보이스 피싱 앱을 실시간으로 탐지하는 기능 개발.<br>
+                                    - UI 리뉴얼 및 커스텀 뷰 개발: 다양한 환경에서 일관적인 UI 제공을 위해 커스텀 뷰 개발.<br>
+                                    - Firebase 적용 및 운영: Firebase를 도입하여 원격 로그 수집 및 분석 시스템 구축을 통해 버그 해결 시간을 단축 및 사용자 통계 집계.<br>
+                                    - 구글 플레이 스토어 운영: 구글 플레이 스토어 운영 정책을 준수하여 앱 배포 및 업데이트 관리.<br><br>
+                                    7. 관련 링크 :<br>
                                     <a href="https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs">https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs</a>
                                 </p>
                             </div>
@@ -164,9 +231,7 @@
                     <div class="project-info2">
                         <h3>라온 모바일 시큐리티</h3>
                         <p>
-                            개인용 백신 서비스입니다.<br>
-                            실시간 설치 감시, 보안 갤러리, 메모리 정리, 터치락 등
-                            10가지 이상 보안 기능을 제공합니다.
+                            라온 모바일 시큐리티는 모바일 보안 서비스 앱으로, AI 기반 딥페이크 탐지, 악성앱 탐지, 스미싱 탐지, 터치락 기능, 보안 폴더 등 10가지 이상 보안 기능을 사용자에게 제공.
                         </p>
                         <p style="font-weight: bold; color: blue;" onclick="openModal('rms_modal')">More</p>
                     </div>
@@ -177,20 +242,20 @@
                             <h1>라온 모바일 시큐리티</h1>
                             <div class="modal-content2">
                                 <p align="left">
-                                    소속 회사 : 라온시큐어<br>
-                                    담당 역할 : Android APP 개발<br>
-                                    업무 기간 : 2021.07 ~ 현재<br>
-                                    개발 환경 : Android Studio<br>
-                                    개발 스펙 : Android SDK, Android AAC, Java, Kotlin, MVVM Pattern, Firebase<br>
-                                    상세 업무 :<br>
-                                    - UI 리뉴얼<br>
-                                    - Kotlin 마이그레이션<br>
-                                    - MVVM 리팩토링<br>
-                                    - 터치락 기능 개발<br>
-                                    - 스미싱 탐지 개발<br>
-                                    - Firebase 적용 및 운영<br>
-                                    - 구글 플레이 스토어 운영<br>
-                                    관련 링크 :<br>
+                                    1. 소속 회사: 라온시큐어<br><br>
+                                    2. 담당 역할: Android App 개발 및 운영<br><br>
+                                    3. 업무 기간: 2021.07 ~ 현재<br><br>
+                                    4. 개발 환경: Android Studio<br><br>
+                                    5. 기술 스택: Android SDK, Android Jetpack, Java, Kotlin, MVVM Pattern, Firebase, Python, Pytorch<br><br>
+                                    6. 주요 업무 및 성과:<br>
+                                    - AI 기반 딥페이크 탐지 개발: Pytorch를 사용하여 i3d, res 모델을 사용한 딥페이크 영상 탐지 기술 개발. 학습 및 데이터 전처리를 통해 탐지 정확도 95% 까지 끌어올림.<br>
+                                    - MVVM 리팩토링: MVVM 패턴을 도입하여 테스트 가능성과 유지보수성을 높임.<br>
+                                    - 터치락 기능 개발: 스크린 터치가 불필요 시, 작업 가용성 확보를 위한 터치 활성/비활성화 시키는 기능 개발을 통하여 신규 고객층(ex:영유아 등) 확보.<br>
+                                    - 스미싱 탐지 개발: 스미싱 문자를 패턴화, 정규화 하여 실시간 문자 스미싱 탐지 기능을 개발.<br>
+                                    - 구글 플레이 스토어 운영: 구글 플레이 스토어 운영 정책을 준수하여 앱 배포 및 업데이트를 관리. 50만 명 이상이 다운로드 하였으며, 현재 1000명 이상이 평가하여 평점 4.2를 유지 중.<br>
+                                    - Firebase 적용 및 운영: Firebase를 도입하여 원격 로그 수집 및 분석 시스템 구축을 통해 버그 해결 시간을 단축 및 사용자 통계 집계.<br>
+                                    - 구글 플레이 스토어 운영<br><br>
+                                    7. 관련 링크:<br>
                                     <a href="https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security">https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security</a>
                                 </p>
                             </div>
@@ -208,9 +273,7 @@
                     <div class="project-info">
                         <h3>iGuard</h3>
                         <p>
-                            자녀 모바일 관리 서비스입니다.<br>
-                            자녀 모바일 사용 시간 설정, 차단 앱 설정, 위치 조회, 스크린샷, 블랙박스 등<br>
-                            다양한 기능을 제공합니다.
+                            자녀 모바일 관리 서비스로, 자녀 모바일 사용 시간 설정, 차단 앱 설정, 위치 조회, 스크린샷, 블랙박스 등 다양한 기능 제공.
                         </p>
                         <p style="font-weight: bold; color: blue;" onclick="openModal('iguard_modal')">More</p>
                     </div>
@@ -247,10 +310,7 @@
                     <div class="project-info">
                         <h3>TouchEn Transkey / mTranskey</h3>
                         <p>
-                            가상 키보드 이용해 정보 입력을 보안해주는 웹 어플리케이션 솔루션입니다.<br>
-                            바뀌는 키 위치, 암호화된 좌표, 멀티 마우스 커서를 지원하여 입력 값을 보안해줍니다.<br>
-                            기기, 플랫폼에 구애받지 않는 <strong>완전한 반응형 웹 디자인</strong>을 제공합니다.<br>
-                            <strong>웹 접근성 심사기준을 완벽하게 준수</strong>합니다.<br>
+                            TouchEn Transkey는 웹 기반 보안 키보드 솔루션으로, 사용자의 키 입력을 보호하고 패턴 잠금 기능 제공.<br>
                         </p>
                         <p style="font-weight: bold; color: blue;" onclick="openModal('transkey_modal')">More</p>
                     </div>
@@ -261,18 +321,18 @@
                             <h1>TouchEn Transkey / mTranskey</h1>
                             <div class="modal-content2">
                                 <p align="left">
-                                    소속 회사 : 라온시큐어<br>
-                                    담당 역할 : Web App 개발<br>
-                                    업무 기간 : 2018.10 ~ 2021.07<br>
-                                    개발 환경 : Eclipse IDE<br>
-                                    개발 스펙 : JavaScript, Java, Java Servlet, JSP, HTML5, CSS 3<br>   
-                                    상세 업무 :<br>
-                                    - UI 리뉴얼 및 커스텀 뷰 개발<br>
-                                    - 반응형 웹 디자인<br>
-                                    - 세션 미사용 개발<br>
-                                    - 패턴 잠금 개발<br>
-                                    - 웹 접근성 준수<br>
-                                    - RESTful API 제공
+                                    1. 소속 회사: 라온시큐어<br>
+                                    2. 담당 역할: Web SDK 개발 및 운영<br>
+                                    3. 업무 기간: 2018.10 ~ 2021.07<br>
+                                    4. 개발 환경: Eclipse IDE<br>
+                                    5. 기술 스택: JavaScript, Java, Java Servlet, JSP, HTML5, CSS 3<br>   
+                                    7. 주요 업무 및 성과:<br>
+                                    - 반응형 웹 디자인: 다양한 디바이스에서 최적화된 사용자 경험을 제공하기 위해 반응형 웹 디자인 적용.<br>
+                                    - 세션 미사용 개발: 분산 시스템을 목적으로 보안 강화를 위해 세션을 사용하지 않는 방법 개발.<br>
+                                    - 패턴 잠금 개발: 사용자의 패턴 입력을 입력을 보호하는 기능 개발.<br>
+                                    - 웹 접근성 준수: 공공 및 금융기관 도입 시 요건(장차법) 준수를 위하여 웹 접근성 심사 기준을 준수하여 개발.<br>
+                                    - RESTful API 제공: REST API 설계 원칙을 준수하여 RESTful API 제공.<br>
+                                    - UI 리뉴얼 및 커스텀 뷰 개발: 다양한 환경에서 일관적인 UI 제공을 위해 커스텀 뷰 개발.
                                 </p>
                             </div>
                         </div>
@@ -285,45 +345,7 @@
     </div>
     <!-- End #projects -->
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul></ul>
-        <h3>Major</h3>
-        <ul>
-            <li>Android SDK</li>
-            <li>Android NDK</li>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Android AAC</li>
-            <li>MVVM Pattern</li>
-        </ul>
-        
-        <h3>Available</h3>
-        <ul>
-            <li>Flutter</li>
-            <li>Dart</li>
-            <li>JavaScript</li>
-            <li>Java Servlet</li>
-            <li>JSP</li>
-            <li>HTML5</li>
-            <li>CSS 3</li>
-            <li>Objective-C</li>
-            <li>C++</li>
-        </ul>
-        
-        <h3>ETC</h3>
-        <ul>
-            <li>Git</li>
-            <li>Jenkins</li>
-            <li>Android Studio</li>
-            <li>eclipse</li>
-            <li>Xcode</li>
-        </ul>
-
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact" class="background-alt">
+    <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
             <form method="POST" action="https://formspree.io/f/mvoyerjq">
