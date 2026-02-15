@@ -402,7 +402,7 @@
 
         .career-product-screenshot {
             flex-shrink: 0;
-            width: 140px;
+            width: 200px;
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid var(--border);
@@ -415,6 +415,26 @@
             display: block;
         }
 
+        .career-product-screenshots {
+            display: flex;
+            gap: 0.6rem;
+            flex-shrink: 0;
+            width: 420px;
+        }
+
+        .career-product-screenshots.single {
+            width: 140px;
+        }
+
+        .career-product-screenshots img {
+            flex: 1;
+            width: 0;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
         @media (max-width: 640px) {
             .career-product-content {
                 flex-direction: column-reverse;
@@ -423,6 +443,10 @@
 
             .career-product-screenshot {
                 width: 120px;
+            }
+
+            .career-product-screenshots {
+                width: 100%;
             }
         }
 
@@ -448,7 +472,8 @@
 
         .personal-card-img {
             width: 100%;
-            height: 200px;
+            height: auto;
+            max-height: 480px;
             background: var(--bg-secondary);
             display: flex;
             align-items: center;
@@ -456,12 +481,13 @@
             color: var(--text-muted);
             font-size: 0.8rem;
             border-bottom: 1px solid var(--border-subtle);
+            overflow: hidden;
         }
 
         .personal-card-img img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
         }
 
         .personal-card-body {
@@ -855,7 +881,7 @@
                         </ul>
                         <a class="link" href="https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security" target="_blank">→ Google Play</a>
                     </div>
-                    <div class="career-product-screenshot">
+                    <div class="career-product-screenshots single">
                         <img src="images/raon_mobile_security.png" alt="라온 모바일 시큐리티">
                     </div>
                 </div>
@@ -895,16 +921,16 @@
         <div class="section-label">Side Projects</div>
         <h2 class="section-title">개인 프로젝트</h2>
 
-        <div class="personal-grid">
-            <div class="personal-card">
-                <div class="personal-card-img">
-                    <img src="images/selcapic.png" alt="셀카픽">
-                </div>
-                <div class="personal-card-body">
-                    <h3>셀카픽</h3>
-                    <div class="subtitle">기획 · 개발 · 배포 · 운영 — 1인 개발</div>
-                    <p class="desc">ML Kit 기반 얼굴 유사도 분석 앱. 사진첩에서 유사한 셀카를 자동으로 묶어주고 베스트샷을 추천.</p>
+        <div class="career-product">
+            <div class="career-product-header">
+                <h4>셀카픽</h4>
+                <span class="period">1인 개발 · 배포 중</span>
+            </div>
+            <p class="role-desc">기획 · 개발 · 배포 · 운영 · ML Kit 기반 얼굴 유사도 분석 앱</p>
+            <div class="career-product-content">
+                <div class="career-product-text">
                     <ul>
+                        <li>사진첩에서 유사한 셀카를 자동으로 묶어주고 베스트샷을 추천.</li>
                         <li>ML Kit Face Detection으로 얼굴 특징 추출, 유사도 점수 산출.</li>
                         <li>유사도 임계값 조정에 따른 정확도-오탐률 트레이드오프 경험.</li>
                         <li>Google AdMob 광고 연동.</li>
@@ -917,7 +943,12 @@
                         <span class="tag">ML Kit</span>
                         <span class="tag">AdMob</span>
                     </div>
-                    <a class="link" href="https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner" target="_blank" style="display:inline-block;margin-top:0.8rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent);text-decoration:none;">→ Google Play</a>
+                    <a class="link" href="https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner" target="_blank">→ Google Play</a>
+                </div>
+                <div class="career-product-screenshots">
+                    <img src="images/selcapic.png" alt="셀카픽 메인">
+                    <img src="images/selcapic_bestshot.png" alt="셀카픽 베스트샷">
+                    <img src="images/selcapic_result.png" alt="셀카픽 정리 완료">
                 </div>
             </div>
         </div>
