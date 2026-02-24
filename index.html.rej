@@ -1,0 +1,28 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -415,6 +415,26 @@
+             display: block;
+         }
+ 
++        .career-product-screenshots {
++            display: flex;
++            gap: 0.6rem;
++            flex-shrink: 0;
++            width: 420px;
++        }
++
++        .career-product-screenshots.single {
++            width: 140px;
++        }
++
++        .career-product-screenshots img {
++            flex: 1;
++            width: 0;
++            height: auto;
++            border-radius: 10px;
++            border: 1px solid var(--border);
++            display: block;
++        }
++
+         @media (max-width: 640px) {
+             .career-product-content {
+                 flex-direction: column-reverse;
