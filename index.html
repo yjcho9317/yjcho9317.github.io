@@ -790,8 +790,8 @@
             <div class="role">모델 개발 및 연구</div>
             <p class="desc">보이스피싱 통화를 AI로 실시간 탐지하는 연구. recall 99.34%를 달성했으나 실서비스 투입 불가 판단.</p>
             <ul>
-                <li>KoBERT INT8 모델 기준 Recall 99.34% 달성. 그러나 Precision 0.82, FP Rate 22%로 정상 대화의 약 1/5을 피싱으로 오탐하는 과적합 징후 확인 (Training Acc 99.93% vs Test Acc 88.67%). 정상 대화 데이터의 다양성 부족(특히 금융 관련 정상 대화)이 원인으로 추정되나, 키워드 수준의 오류 분석은 미수행.</li>
-                <li>실서비스에서 22%의 오탐률은 사용자 경험을 저해하므로, 높은 Recall에도 불구하고 Precision 개선 없이는 제품화가 어렵다고 판단하여 보류. 후속 방향으로 정상 대화 데이터 다양성 보강, 오탐 사례 기반 Hard Negative Mining, 경계 사례 집중 수집을 제안.</li>
+                <li>KoBERT 기반 모델로 Recall 99.34% 달성. 그러나 FP Rate 22%로 실서비스 적용 시 사용자 경험을 저해할 수준이라 판단, 제품화 보류.</li>
+                <li>후속 방향으로 정상 대화 데이터 보강 및 Hard Negative Mining 전략을 제안.</li>
             </ul>
             <div class="tags">
                 <span class="tag">KoBERT</span>
